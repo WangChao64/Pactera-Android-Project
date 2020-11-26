@@ -8,7 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidProjcet">
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".component.TargetActivity"></activity>
+        <activity android:name=".component.LifeCycleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
