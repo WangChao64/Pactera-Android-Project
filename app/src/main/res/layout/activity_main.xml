@@ -9,14 +9,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="#3478FD"
-        android:layout_height="150dp">
+        android:layout_height="150dp"
+        android:background="#3478FD">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -36,12 +36,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
                     android:drawablePadding="5dp"
                     android:gravity="center"
-                    android:layout_marginTop="5dp"
                     android:text="Activity"
                     android:textColor="@color/white"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -63,10 +63,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Service"
                     android:layout_marginTop="5dp"
+                    android:text="Service"
                     android:textColor="@color/white"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -89,7 +89,7 @@
                     android:layout_marginTop="5dp"
                     android:text="Broadcast "
                     android:textColor="@color/white"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -112,7 +112,7 @@
                     android:layout_marginTop="5dp"
                     android:text="ContentProvider"
                     android:textColor="@color/white"
-                    android:textSize="12dp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -122,43 +122,104 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
         android:padding="10dp">
 
-        <TextView
+        <LinearLayout
+            android:id="@+id/ll_fragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_launcher"
-            android:drawablePadding="5dp"
-            android:gravity="center"
-            android:text="Activity生命周期"
-            android:textColor="@color/black"
-            android:textSize="14dp" />
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_fragment" />
 
-        <TextView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:text="Fragment"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_intent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_launcher"
-            android:drawablePadding="5dp"
-            android:gravity="center"
-            android:text="Service生命周期"
-            android:textColor="@color/black"
-            android:textSize="14dp" />
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:src="@mipmap/icon_right" />
 
-        <TextView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:text="正向传值"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_intent_right"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_launcher"
-            android:drawablePadding="5dp"
-            android:gravity="center"
-            android:text="Activity生命周期"
-            android:textColor="@color/black"
-            android:textSize="14dp" />
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:text="反向传值"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:text="存储"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
